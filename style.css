@@ -116,3 +116,78 @@ footer {
     text-align: center;
     background: #eee;
 }
+/* ========== RESET ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+/* ========== HEADER 全体 ========== */
+header {
+    width: 100%;
+    background: #ffffffee;
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+/* ---------- 上段（ログイン・English） ---------- */
+.header-top {
+    background: #f4f4f4aa;
+    border-bottom: 1px solid #ddd;
+    padding: 4px 20px;
+}
+
+.utility-nav {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+.utility-nav a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #333;
+}
+
+/* ---------- 下段（ロゴ + メインナビ） ---------- */
+.header-main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 180px;
+}
+
+/* グローバルナビ */
+.global-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
+
+.global-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.global-nav a:hover {
+    color: #0071c5;
+}
+
+/* 固定ヘッダー分の余白 */
+body {
+    padding-top: 120px;
+}
