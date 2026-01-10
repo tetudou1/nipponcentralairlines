@@ -191,3 +191,79 @@ header {
 body {
     padding-top: 120px;
 }
+/* ========== RESET ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+/* ========== HEADER（上段＋下段 固定） ========== */
+header {
+    width: 100%;
+    background: #ffffffee;
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+/* ---------- 上段（ログイン / マイレージ / お問い合わせ / EN） ---------- */
+.header-top {
+    background: #f4f4f4cc;
+    border-bottom: 1px solid #ddd;
+    padding: 4px 20px;
+}
+
+.utility-nav {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+}
+
+.utility-nav a {
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+}
+
+/* ---------- 下段（ロゴ＋メニュー） ---------- */
+.header-main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 180px;
+}
+
+/* NAV */
+.global-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
+
+.global-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.global-nav a:hover {
+    color: #0071c5;
+}
+
+/* ---------- 固定ヘッダーのための余白 ---------- */
+body {
+    padding-top: 120px; /* 上段 + 下段の高さ分ぴったり */
+}
